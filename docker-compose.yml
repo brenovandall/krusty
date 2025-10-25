@@ -1,0 +1,6 @@
+services:
+  krusty.api:
+    image: ${DOCKER_REGISTRY-}krustyapi
+    build:
+      context: .
+      dockerfile: src/Krusty.Api/Dockerfile
